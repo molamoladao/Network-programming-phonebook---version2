@@ -1,0 +1,52 @@
+<style>
+   *{
+    padding:0px;
+    margn:0px;
+    }
+    .ttitle{
+				
+		font-family:YouYuan;
+		color:#778899;
+	}
+	.nname{
+		//text-align:center;
+		padding-left:85px;
+		font-family:YouYuan;
+		color:#778899;
+	}
+	.ppassword{
+		//text-align:center;
+		padding-left:85px;
+		font-family:YouYuan;
+		color:#778899;
+	}
+	.qita{
+		text-align:right;
+		font-family:youyuan;
+		color:#778899;
+	}
+	.denglu{
+		text-align:center;
+		font-family:YouYuan;
+		color:#778899;
+		size=7;
+	}
+	.kuang{
+        font-family:verdana;
+		position:fixed;
+		padding:10px;
+		left:420px;
+		width:400px;
+		height:240px;
+		border-radius:40px;
+		border:10px solid #CD853F;
+	}
+	.beijing{
+		background-color:#FFE4E1;
+	}
+	.error{
+	color:red;
+	font-size=22px;
+}
+	
+</style>

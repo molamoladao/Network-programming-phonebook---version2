@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>新联系人</title> 
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<link rel='StyleSheet'  type='text/css' href='mystyle3.css'>
+
+
+<script>
+$.validator.setDefaults({
+    submitHandler: function() {
+      alert("添加新联系人成功!");
+    }
+});
+
+$().ready(function() {
+    $("#signupForm").validate({
+		rules:{
+			nname:{
+				required: true,
+				minlength: 2
+			},
+			ttel:{
+				minlength:6,
+			},
+			mmail:{
+				email:true,
+			},
+			
+			QQQ:{
+				minlength:6,
+			},
+		},
+		messages: {
+			nname:{
+				required: "请输入用户名",
+				minlength: "姓名至少2位"
+			},
+			ttel:{
+				minlength: "电话号至少6位"
+			},
+			QQQ:{
+				minlength: "QQ号至少6位"
+			},
+		}
+	});		 
+});
+</script>
+
+</head>
+
+<body class="beijing"> 
+
+
+
+<form name="form1" id="signupForm" action="通讯录.html" method="get">
+
+<p class="hhead" >△新建联系人</p>
+<hr>
+
+<p class="shuxing" >
+<label for="nname"><b>姓名：</label></b>
+<input  type="text" id="nname" name="nname" required>
+<br></p>
+
+<p class="shuxing" >
+<label for="ttel"><b>电话：</label></b>
+<input  type="text" id="ttel" name="ttel" >
+<br></p>
+
+<p class="shuxing" >
+<label for="mmail"><b>邮箱：</label></b>
+<input  type="text" id="mmail" name="mmail" >
+<br></p>
+
+<p class="shuxing" >
+<label for="aadre"><b>住址：</label></b>
+<input  type="text" id="aadre" name="aadre" >
+<br></p>
+<p class="shuxing" >
+<label for="QQQ"><b>QQ号：</label></b>
+<input  type="text" id="QQQ" name="QQQ" >
+<br></p>
+
+
+<br>
+<hr>
+<input class="weizhi" type="submit" value="完成">
+</form>
+
+</body>
+
+</html>
